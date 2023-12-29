@@ -7,7 +7,7 @@ public class App {
      
     public static String concatString (String word1, String word2, String word3) {
         // TODO: Write code that concatenates the input parameters and returns the result
-        return word1.concat(word2)+ word3;
+        return word1.concat(word2).concat(word3);
       
     }
     public static Boolean areEqual(String word1, String word2) {
