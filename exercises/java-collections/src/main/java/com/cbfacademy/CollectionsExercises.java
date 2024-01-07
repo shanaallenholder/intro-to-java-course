@@ -4,7 +4,7 @@ import java.util.*;
 
 public class CollectionsExercises {
 
-    public LinkedList<Integer> useLinkedList() {
+    public static LinkedList<Integer> useLinkedList() {
 
         // TODO: create an empty linked list
         List<Integer> integers = new LinkedList <>();
