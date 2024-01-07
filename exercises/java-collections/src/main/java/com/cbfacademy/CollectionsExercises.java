@@ -11,7 +11,7 @@ public class CollectionsExercises {
         System.out.println(integers.size()); //0
 
         //  - add 4 as the first element of the list
-        integers.addFirst(4);
+        ((LinkedList<Integer>) integers).addFirst(4);
 
         //  - then add 5, 6, 8, 2, 9 to the list
         integers.add(5);
@@ -23,16 +23,18 @@ public class CollectionsExercises {
 
         //  - add another 2 as the last element of the list
         integers.addLast(2);
+        System.out.println(integers);
 
         //  - add 4 as the 3rd element of the list
-        integers.add(3,4);
+        integers.add(2,4);
+        System.out.println(integers);
 
         //  - invoke the method element() on the list and print the result on the screen
-        Integer result = queue.element();
-        System.out.println("Result of the element(): " + result);
-        
+        Integer elementResult = ((LinkedList<Integer>) integers).element();
+        System.out.println("Result of element(): " + elementResult);
+
         //  - return the list
-        return integers;
+        return (LinkedList<Integer>) integers;
 
         
     }
