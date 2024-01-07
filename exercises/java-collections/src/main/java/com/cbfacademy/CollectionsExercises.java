@@ -5,14 +5,36 @@ import java.util.*;
 public class CollectionsExercises {
 
     public LinkedList<Integer> useLinkedList() {
+
         // TODO: create an empty linked list
+        List<Integer> integers = new LinkedList <>();
+        System.out.println(integers.size()); //0
+
         //  - add 4 as the first element of the list
+        integers.addFirst(4);
+
         //  - then add 5, 6, 8, 2, 9 to the list
+        integers.add(5);
+        integers.add(6);
+        integers.add(8);
+        integers.add(2);
+        integers.add(9);
+        System.out.println(integers);
+
         //  - add another 2 as the last element of the list
+        integers.addLast(2);
+
         //  - add 4 as the 3rd element of the list
+        integers.add(3,4);
+
         //  - invoke the method element() on the list and print the result on the screen
+        Integer result = queue.element();
+        System.out.println("Result of the element(): " + result);
+        
         //  - return the list
-        throw new RuntimeException("Not implemented");
+        return integers;
+
+        
     }
 
     public Stack<Integer> useStack() {
