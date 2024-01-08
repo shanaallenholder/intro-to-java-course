@@ -7,11 +7,11 @@ public class CollectionsExercises {
     public List<Integer> useLinkedList() {
 
         // TODO: create an empty linked list
-        List<Integer> integers = new LinkedList <>();
+        LinkedList<Integer> integers = new LinkedList <>();
         //System.out.println(integers.size()); //0
 
         //  - add 4 as the first element of the list
-        ((List<Integer>) integers).addFirst(4);
+        integers.addFirst(4);
 
         //  - then add 5, 6, 8, 2, 9 to the list
         integers.addAll(List.of(5, 6, 8, 2, 9));
@@ -25,7 +25,8 @@ public class CollectionsExercises {
         integers.add(2,4);
 
         //  - invoke the method element() on the list and print the result on the screen
-        System.out.print(Collections<Integer> integers.());
+        Integer head = integers.element();
+        System.out.print("Head of the queue" + head);
 
         //  - return the list
         return integers;
@@ -47,13 +48,14 @@ public class CollectionsExercises {
         System.out.println(stack);
 
         //  - print the first element of the stack on the screen
-          System.out.print(stack.firstElement());
+          System.out.print(stack.peek());
 
         //  - print the last element of the stack on the screen
           System.out.print(stack.lastElement());
 
         //  - invoke the method pop() on the stack and print the result on the screen
-          System.out.print(stack.pop());  
+          System.out.print("Popped Element" + stack.pop());  
+          
         //  - invoke the push(4) method on the stack
           stack.push(4);
 
@@ -76,17 +78,17 @@ public class CollectionsExercises {
 
 
         //  - print the first element of the queue on the screen
-            System.out.println(arrayDeque.getFirst());
+            System.out.print(arrayDeque.getFirst());
            
         //  - print the last elem9nt of the queue on the screen
-            System.out.println(arrayDeque.getLast());
+            System.out.print(arrayDeque.getLast());
 
 
         //  - invoke the method poll() on the queue and print the result on the screen
-            System.out.println(arrayDeque.poll());
+            System.out.print(arrayDeque.poll());
 
         //  - invoke the element() method on the queue and print the result on the screen
-            System.out.println(arrayDeque.element());
+            System.out.print(arrayDeque.element());
 
         //  - return the queue
            return arrayDeque;
