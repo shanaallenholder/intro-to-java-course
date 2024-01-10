@@ -8,7 +8,7 @@ public class CollectionsExercises {
 
         // TODO: create an empty linked list
             LinkedList <Integer> integers = new LinkedList <Integer>();
-          System.out.print(integers.size());
+          
 
         //  - add 4 as the first element of the list
         integers.addFirst(4);
@@ -38,17 +38,17 @@ public class CollectionsExercises {
 
         // TODO: create an empty stack
         Stack <Integer> stack = new Stack<>();
-       //System.out.println(stack.size()); //0
+     
 
         //  - add 5, 6, 8, 9 to the stack
         stack.push(5);
         stack.push(6);
         stack.push(8);
         stack.push(9);
-        System.out.print(stack);
+        
 
         //  - print the first element of the stack on the screen
-          System.out.print(stack.peek());
+          System.out.print(stack.firstElement());
 
         //  - print the last element of the stack on the screen
           System.out.print(stack.lastElement());
@@ -73,14 +73,11 @@ public class CollectionsExercises {
             arrayDeque.add(6);
             arrayDeque.add(8);
             arrayDeque.add(9);
-            System.out.print(arrayDeque);
-
-
 
         //  - print the first element of the queue on the screen
             System.out.print(arrayDeque.getFirst());
            
-        //  - print the last elem9nt of the queue on the screen
+        //  - print the last element of the queue on the screen
             System.out.print(arrayDeque.getLast());
 
 
@@ -99,7 +96,7 @@ public class CollectionsExercises {
 
     public HashMap<Integer, String> useHashMap() {
         // TODO: create an empty hash map
-         HashMap <Integer, String> hashMap = new HashMap<Integer, String>();
+         HashMap <Integer, String> hashMap = new HashMap<>();
 
         //  - add {1, TypeScript} entry to the map
            hashMap.put(1, "TypeScript");
@@ -120,20 +117,13 @@ public class CollectionsExercises {
            hashMap.put(6, "Rust");
           
 
-
         //  - determine the set of keys from the map and print it on the screen
              Set<Integer> keys = hashMap.keySet();
-               for (Integer k : keys) 
-            System.out.print(keys);
-
+             System.out.print(keys);
 
         //  - determine the set of values from the map and print it on the screen
-            Collection<String> values = hashMap.values();
-               if (condition) { values
-                
-               } (String v : values) 
-            System.out.print(c)
-
+              Collection<String> values = hashMap.values();
+              System.out.print(values);
 
         //  - determine whether the map contains "English" as a language and print the result on the screen
            System.out.print(hashMap.containsValue("English"));
