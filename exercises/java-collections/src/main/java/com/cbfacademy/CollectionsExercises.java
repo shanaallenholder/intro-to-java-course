@@ -4,11 +4,11 @@ import java.util.*;
 
 public class CollectionsExercises {
 
-    public List<Integer> useLinkedList() {
+       public LinkedList <Integer> useLinkedList() {
 
         // TODO: create an empty linked list
-        LinkedList<Integer> integers = new LinkedList <>();
-        //System.out.println(integers.size()); //0
+            LinkedList <Integer> integers = new LinkedList <Integer>();
+          System.out.print(integers.size());
 
         //  - add 4 as the first element of the list
         integers.addFirst(4);
@@ -26,7 +26,7 @@ public class CollectionsExercises {
 
         //  - invoke the method element() on the list and print the result on the screen
         Integer head = integers.element();
-        System.out.print("Head of the queue" + head);
+        System.out.print(head);
 
         //  - return the list
         return integers;
@@ -45,7 +45,7 @@ public class CollectionsExercises {
         stack.push(6);
         stack.push(8);
         stack.push(9);
-        System.out.println(stack);
+        System.out.print(stack);
 
         //  - print the first element of the stack on the screen
           System.out.print(stack.peek());
@@ -54,13 +54,13 @@ public class CollectionsExercises {
           System.out.print(stack.lastElement());
 
         //  - invoke the method pop() on the stack and print the result on the screen
-          System.out.print("Popped Element" + stack.pop());  
+          System.out.print(stack.pop());  
           
         //  - invoke the push(4) method on the stack
           stack.push(4);
 
         //  - return the stack
-        return stack;
+        return stack; 
     }
 
 
@@ -73,7 +73,7 @@ public class CollectionsExercises {
             arrayDeque.add(6);
             arrayDeque.add(8);
             arrayDeque.add(9);
-            System.out.println(arrayDeque);
+            System.out.print(arrayDeque);
 
 
 
@@ -99,7 +99,7 @@ public class CollectionsExercises {
 
     public HashMap<Integer, String> useHashMap() {
         // TODO: create an empty hash map
-         HashMap <Integer, String> hashMap = new HashMap<>();
+         HashMap <Integer, String> hashMap = new HashMap<Integer, String>();
 
         //  - add {1, TypeScript} entry to the map
            hashMap.put(1, "TypeScript");
@@ -124,17 +124,19 @@ public class CollectionsExercises {
         //  - determine the set of keys from the map and print it on the screen
              Set<Integer> keys = hashMap.keySet();
                for (Integer k : keys) 
-            System.out.println("key: " + k);
+            System.out.print(keys);
 
 
         //  - determine the set of values from the map and print it on the screen
             Collection<String> values = hashMap.values();
-               for (String v : values) 
-            System.out.println("value: " + v);
+               if (condition) { values
+                
+               } (String v : values) 
+            System.out.print(c)
 
 
         //  - determine whether the map contains "English" as a language and print the result on the screen
-           System.out.println(hashMap.containsValue("English")); //false
+           System.out.print(hashMap.containsValue("English"));
 
         //  - return the map
             return hashMap;
