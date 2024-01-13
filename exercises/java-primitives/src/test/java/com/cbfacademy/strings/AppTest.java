@@ -15,6 +15,7 @@ import static org.junit.jupiter.params.provider.Arguments.arguments;
 @DisplayName(value = "String Exercises")
 public class AppTest {
 
+
     @ParameterizedTest
     @MethodSource
     @DisplayName("concatenate() method returns correctly concatenated string")
