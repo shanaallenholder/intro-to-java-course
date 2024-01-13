@@ -5,7 +5,7 @@ public class App {
         System.out.println("Hello World!");
     }
      
-    //TODO: Write code that concatenate the input parameters and returns the result
+    //TODO: Write code that concatenates the input parameters and returns the result
     public static String concatString (String word1, String word2, String word3) {
         return word1.concat(word2).concat(word3);
       
@@ -22,11 +22,9 @@ public class App {
         return String.format("Item: %s. Price: £%.2f. Quantity: %d", item, price, quantity);
     }
 
-    public static String concatenate(String word1, String word2, String word3) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'concatenate'");
+ 
     }
 
-    }
+    
 
 

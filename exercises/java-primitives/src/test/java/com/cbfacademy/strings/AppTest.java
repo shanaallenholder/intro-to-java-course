@@ -20,7 +20,7 @@ public class AppTest {
     @MethodSource
     @DisplayName("concatenate() method returns correctly concatenated string")
     public void concatenate_ReturnsConcatenatedString(String word1, String word2, String word3, String expected) {
-        final String result = App.concatenate(word1, word2, word3);
+        final String result = App.concatString(word1, word2, word3);
 
         assertThat(result, is(equalTo(expected)));
     }
