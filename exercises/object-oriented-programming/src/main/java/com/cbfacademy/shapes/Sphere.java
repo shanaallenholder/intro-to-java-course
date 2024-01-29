@@ -10,7 +10,7 @@ public class Sphere extends Shape {
 
 @Override
 public double getArea(){
-   return 4 * Math.PI * Math.pow(radius,2);
+   return (4 * Math.PI *(radius * radius));
 }
 @Override 
 public String getName(){
