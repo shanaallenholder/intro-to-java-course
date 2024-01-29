@@ -36,7 +36,6 @@ public class Account {
         } else {
             return 0; // Returns 0 for insufficient balance in account
         }
-        
 
         }
 

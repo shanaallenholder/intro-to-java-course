@@ -43,8 +43,8 @@ package com.cbfacademy.cars;
         }
 
        //returns the car details, including the make, model, colour and year
-       public String getDetails() {
-       return  String.format( "My car is a" + getMake() + getModel() + getColour() + getYear());
+       public String getCarValues() {
+       return String.format("My car is a" + " " + make + " " + model + " "+ colour + " " + year) ;
 
 
         }

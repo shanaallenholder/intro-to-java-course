@@ -12,7 +12,7 @@ public class App {
          List<Car> cars = showroom.getCars();
 
         for (Car car : cars){
-        System.out.println(car.getDetails());
+        System.out.println(car.getCarValues());
     }
     
         } 

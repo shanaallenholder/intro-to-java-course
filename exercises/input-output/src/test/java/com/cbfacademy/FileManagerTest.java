@@ -5,6 +5,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.stream.Collectors;
 
+import org.apache.logging.log4j.core.appender.FileManager;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
@@ -139,7 +140,7 @@ public class FileManagerTest {
         Path targetFile = createTempFileWithContent("empty_target.txt", inputString);
 
         // Reverse the lines of the empty source file to a target file
-        fileManager.reverseLines(sourceFile.toString(), targetFile.toString());
+        FileManager.reverseLines(sourceFile.toString(), targetFile.toString());
 
         // Read the target file and verify that it is also empty
         assertThat(Files.exists(targetFile), is(true));
