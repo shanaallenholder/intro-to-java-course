@@ -15,16 +15,24 @@ public class CurrentAccount extends Account {
      public void setOverdraftLimit(double overdraftLimit){
       this.overdraftLimit = overdraftLimit;
      }
-
      @Override
-     public double withdraw(double requested){
-        if (requested > getBalance() + overdraftLimit) {
-            return 0; // Insufficient balance   
+public double withdraw(double requested) {
+    double availableBalance = getBalance() + overdraftLimit;
+    if (requested <= availableBalance) {
+        return super.withdraw(requested);
+      } else {
+        if (requested <= overdraftLimit) {
+            double actualMoney = super.withdraw(requested);
+            return actualMoney;   
         } else {
-            return super.withdraw(requested);
+            return 0.0;
         }
-     }
-    
+      }
+    }
 }
+    
 
+     
+    
+   
 

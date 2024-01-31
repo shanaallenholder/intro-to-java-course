@@ -10,7 +10,9 @@ public class SavingsAccount extends Account {
     }
      
     public void applyInterest(){
-
+        double interest = getBalance() * interestRate;
+        deposit(interest);
+        
     }
 
     public double getInterestRate(){
@@ -19,7 +21,10 @@ public class SavingsAccount extends Account {
     }
 
     public void setInterestRate(double interestRate){
-        this.interestRate = interestRate;
+        if (interestRate >= 0){
+        this.interestRate = interestRate; 
+        }
+       
 
     }
 }

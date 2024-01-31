@@ -19,16 +19,16 @@ package com.cbfacademy.cars;
 
       // returns the car make
        public String getMake(){
-        return make;
+        return this.make;
       }
       //returns the car model
          public String getModel(){
-        return model;
+        return this.model;
       
        }
        //returns the year the car was made
         public int getYear(){
-        return year;
+        return this.year;
 
        }
 
@@ -38,17 +38,17 @@ package com.cbfacademy.cars;
        }
 
         //sets the colour of the car
-        public void setColour(String newColour)  {
+        public String setColour(String newColour)  {
           this.colour = newColour;
+          return newColour;
         }
 
        //returns the car details, including the make, model, colour and year
-       public String getCarValues() {
-       return String.format("My car is a" + " " + make + " " + model + " "+ colour + " " + year) ;
-
-
+       public String getDetails(){
+       return String.format("%s, %s, %s, %s", this.make, this.model, this.colour, this.year);
+       }
+      
         }
       
-    
-        } 
+
       
