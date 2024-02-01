@@ -3,10 +3,12 @@ package com.cbfacademy.accounts;
 public class CurrentAccount extends Account {
     
     private double overdraftLimit;
+    
 
     public CurrentAccount(int accountNumber, double balance, double overdraftLimit){
         super(accountNumber, balance);
         this.overdraftLimit = overdraftLimit;
+       
     }
      public double getOverdraftLimit(){
         return overdraftLimit;
@@ -17,22 +19,20 @@ public class CurrentAccount extends Account {
      }
      @Override
 public double withdraw(double requested) {
-    double availableBalance = getBalance() + overdraftLimit;
-    if (requested <= availableBalance) {
+    if (requested <= balance + overdraftLimit) {
         return super.withdraw(requested);
-      } else {
-        if (requested <= overdraftLimit) {
-            double actualMoney = super.withdraw(requested);
-            return actualMoney;   
-        } else {
-            return 0.0;
+    } else {
+        System.out.println("Withdrawal amount exceeds available balance (including overdraft).");
+        return 0.0;
+
+    
         }
-      }
+         
     }
 }
     
 
      
-    
+
    
 
