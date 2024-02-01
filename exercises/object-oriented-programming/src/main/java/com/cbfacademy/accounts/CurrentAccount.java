@@ -20,9 +20,10 @@ public class CurrentAccount extends Account {
      @Override
 public double withdraw(double requested) {
     if (requested <= balance + overdraftLimit) {
-        return super.withdraw(requested);
+        balance -= requested;
+        return requested;
     } else {
-        System.out.println("Withdrawal amount exceeds available balance (including overdraft).");
+        System.out.println("Withdrawal amount exceeds the balance you have available (including how much is in the overdraft).");
         return 0.0;
 
     
